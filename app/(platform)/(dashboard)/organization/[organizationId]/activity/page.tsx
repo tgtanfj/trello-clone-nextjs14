@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { ActivityList } from "./_components/activity-list";
 import { checkSubscription } from "@/lib/subscription";
 
-const ActivityPage = () => {
+const ActivityPage = async () => {
   const isPro = await checkSubscription();
 
   return (
